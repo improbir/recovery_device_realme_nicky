@@ -12,7 +12,11 @@ jobs:
       CODENAME: 'RMX1901'
       BUILD_LUNCH: 'omni_RMX1901-eng'
       PB_OFFICIAL: 'true'
-      CHANGELOG: " - Initial build"
+      #TEST_BUILD: 'true'
+      CHANGELOG: |
+        - Fixed Android 11 Decryption
+        - Fixed Flash light
+        - Flashlight toggled by Vol up (+) on hold & Lock screen
     working_directory: /home/builder/pitchblack
     steps:
       - run:

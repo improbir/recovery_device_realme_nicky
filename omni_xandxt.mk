@@ -12,7 +12,6 @@ $(call inherit-product, vendor/pb/config/common.mk)
 PRODUCT_DEVICE := xandxt
 PRODUCT_NAME := omni_xandxt
 PRODUCT_BRAND := Realme
-PRODUCT_MODEL := Realme X/XT
 PRODUCT_MANUFACTURER := Realme
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -25,6 +24,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=xandxt \
     BUILD_PRODUCT=xandxt \
     TARGET_DEVICE=xandxt
+
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
+    ro.product.device \
+    ro.product.product.device \
+    ro.build.product \
+    ro.product.name \
+    ro.product.model \
+    ro.product.product.model
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.device

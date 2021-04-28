@@ -118,8 +118,8 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 #Init
-TARGET_INIT_VENDOR_LIB := libinit_realmex
-TARGET_RECOVERY_DEVICE_MODULES := libinit_realmex
+TARGET_INIT_VENDOR_LIB := libinit_xandxt
+TARGET_RECOVERY_DEVICE_MODULES := libinit_xandxt
 
 ########
 # TWRP #

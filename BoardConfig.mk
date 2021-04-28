@@ -1,4 +1,4 @@
-LOCAL_PATH := device/realme/RMX1901
+LOCAL_PATH := device/realme/xandxt
 
 # Architecture
 TARGET_ARCH := arm64
@@ -71,7 +71,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX1901,RMX1901CN
+TARGET_OTA_ASSERT_DEVICE := RMX1901,RMX1901CN,RMX1921,RMX1921EU
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true

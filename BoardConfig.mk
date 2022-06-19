@@ -159,6 +159,9 @@ BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
+# Include python, for ABX conversion
+TW_INCLUDE_PYTHON := true
+
 # PBRP specific build flags
 PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true

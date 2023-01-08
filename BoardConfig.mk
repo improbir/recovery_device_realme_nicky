@@ -14,7 +14,12 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/oplus/nicky
+DEVICE_PATH := device/realme/nicky
+
+# For building with minimal manifest
+ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -99,14 +104,16 @@ TARGET_NO_RECOVERY := false
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
-# Encryption
+# Crypto
+TW_INCLUDE_CRYPTO := true
+TW_USE_FSCRYPT_POLICY := 1
 BOARD_USES_QCOM_FBE_DECRYPTION := true
+
+# Hack: prevent anti rollback
 PLATFORM_VERSION := 127
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 PLATFORM_SECURITY_PATCH := 2127-12-31
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
-TW_INCLUDE_CRYPTO := true
-TW_USE_FSCRYPT_POLICY := 1
 
 # Extras
 TW_INCLUDE_RESETPROP := true

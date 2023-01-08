@@ -24,13 +24,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
-$(call inherit-product, device/oplus/nicky/device.mk)
+$(call inherit-product, device/realme/nicky/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
-PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
-PRODUCT_BRAND := realme
-PRODUCT_MANUFACTURER := realme
-PRODUCT_MODEL := $(PRODUCT_RELEASE_NAME)
+PRODUCT_DEVICE := nicky
+PRODUCT_NAME := omni_nicky
+PRODUCT_BRAND := Realme
+PRODUCT_MODEL := 3Pro/5Pro/X/XT
+PRODUCT_MANUFACTURER := Realme

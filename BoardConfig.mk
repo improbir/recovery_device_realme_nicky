@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/nicky
+DEVICE_PATH := device/realme/xandxt
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true

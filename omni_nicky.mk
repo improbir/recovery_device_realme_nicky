@@ -32,5 +32,5 @@ $(call inherit-product, device/realme/nicky/device.mk)
 PRODUCT_DEVICE := nicky
 PRODUCT_NAME := omni_nicky
 PRODUCT_BRAND := Realme
-PRODUCT_MODEL := 3Pro/5Pro/X/XT
+PRODUCT_MODEL := RMX1921
 PRODUCT_MANUFACTURER := Realme

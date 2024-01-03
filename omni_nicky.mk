@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := xandxt
+PRODUCT_RELEASE_NAME := nicky
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -26,11 +26,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 
-$(call inherit-product, device/realme/xandxt/device.mk)
+$(call inherit-product, device/realme/nicky/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := xandxt
-PRODUCT_NAME := omni_xandxt
+PRODUCT_DEVICE := nicky
+PRODUCT_NAME := omni_nicky
 PRODUCT_BRAND := Realme
-PRODUCT_MODEL := X/XT
+PRODUCT_MODEL := 3Pro/5Pro/X/XT
 PRODUCT_MANUFACTURER := Realme

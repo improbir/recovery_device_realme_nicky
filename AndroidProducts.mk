@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_xandxt.mk
+    $(LOCAL_DIR)/omni_nicky.mk
 
-COMMON_LUNCH_CHOICES := omni_xandxt-eng
+COMMON_LUNCH_CHOICES := omni_nicky-eng

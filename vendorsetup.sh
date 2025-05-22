@@ -11,3 +11,6 @@ export OF_STATUS_H=100
 
 # Ozip decryption
 export OF_SUPPORT_OZIP_DECRYPTION=1
+
+# Battery
+export OF_USE_LEGACY_BATTERY_SERVICES=1
